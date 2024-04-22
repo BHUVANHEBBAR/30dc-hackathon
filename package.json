@@ -3,25 +3,26 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "type": "module",
+    
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/BHUVANHEBBAR/30dc-hackathon.git"
+        "type": "git",
+        "url": "git+https://github.com/BHUVANHEBBAR/30dc-hackathon.git"
     },
     "author": "bhuvan,hrithik",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/BHUVANHEBBAR/30dc-hackathon/issues"
+        "url": "https://github.com/BHUVANHEBBAR/30dc-hackathon/issues"
     },
     "homepage": "https://github.com/BHUVANHEBBAR/30dc-hackathon#readme",
     "dependencies": {
-      "body-parser": "^1.20.2",
-      "ejs": "^3.1.10",
-      "express": "^4.19.2",
-      "mongoose": "^8.3.2",
-      "nodemon": "^3.1.0"
+        "body-parser": "^1.20.2",
+        "ejs": "^3.1.10",
+        "express": "^4.19.2",
+        "mongoose": "^8.3.2",
+        "nodemailer": "^6.9.13",
+        "nodemon": "^3.1.0"
     }
-  }
+}
