@@ -1,7 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const sendmail = require('./controllers/sendmail');const contactModel = require('./models/contactus');
+const sendmail = require('./controllers/sendmail');
+const contactModel = require('./models/contactus');
 const dburl="mongodb+srv://tractorbuddyapp:CFqW6wPM91vcbuNZ@cluster0.346nge9.mongodb.net/Nursery?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
