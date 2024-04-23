@@ -15,14 +15,8 @@ mongoose
 		console.error("Error signing up:", error);
 		res.status(500).send("Internal Server Error");
 	});
-var obj={
-    name:"hrithik",
-    mobile:"9880285935",
-    email:"test1@gmail.com",
-    City:"bangalore",
-    dob:"25-11-2002"
-}
-//contactModel.create(obj);
+
+
 const app = express();
 const port = 3000;
 app.use(express.static('public'));
