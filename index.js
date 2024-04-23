@@ -2,7 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const sendmail = require('./controllers/sendmail');
-const contactModel = require('./models/contactus');
+const feeddata=require('./controllers/feeddata');
+const contactModel = require('./controllers/models/contactus');
 const dburl="mongodb+srv://tractorbuddyapp:CFqW6wPM91vcbuNZ@cluster0.346nge9.mongodb.net/Nursery?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
@@ -21,15 +22,16 @@ var obj={
     City:"bangalore",
     dob:"25-11-2002"
 }
-contactModel.create(obj);
+//contactModel.create(obj);
 const app = express();
 const port = 3000;
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.get('/', (req, res) => {
+app.get('/', (req,res) => {
    res.send("hi");
 });
-app.get("/s",sendmail);
+app.get("/s",feeddata);
+app.post("/s",sendmail);
 app.listen(port,()=>{
     console.log("listening on port"+port);
 });
