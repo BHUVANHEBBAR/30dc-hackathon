@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
-
+import contactus from './contactus.js';
 
 const app = express();
 const port = 3000;
@@ -25,22 +25,6 @@ mongoose
 		console.error("Error signing up:", error);
 	});
 
-
-//Schema of DB
-
-const formDataSchema = new mongoose.Schema({
-first_name:String,
-last_name:String,
-kids_name:String,
-email:String,
-city:String,
-date:String,
-
-});
-
-  // DB model here
-  const FormData = mongoose.model('FormData',formDataSchema);
-
 //Nodemailer
 
 const transporter = nodemailer.createTransport({
@@ -51,22 +35,18 @@ const transporter = nodemailer.createTransport({
 }});
 
 
-
-
   app.post('/submit', async (req, res) => {
     try {
       // Create a new FormData instance with the request body data
-      const formData = new FormData({
-        name: req.body.first_name,
+      var formData = {
+        first_name: req.body.first_name,
         last_name: req.body.last_name,
         kids_name : req.body.kids_name,
         email: req.body.email,
         city: req.body.city,
         date: req.body.date
-      });
-  
-      // Save the form data to the database
-      await formData.save();
+      };
+      contactus.create(formData);
   
       // Prepare the email message
       const mailOptions = {

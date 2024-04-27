@@ -58,14 +58,14 @@ const Body = () => {
 
   return (
     <>
-      <section className="flex relative justify-between  h-screen">
+      <section className="flex flex-col md:flex-row ">
         <div className="absolute top-0 -left-1 w-96 h-96 bg-bgSecondary rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
         <div className="absolute top-6 right-12 w-96 h-96 bg-bgPrimary rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-1000"></div>
         <div className="absolute top-56 right-96 w-96 h-96 bg-red-300 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-2000"></div>
         <div className="absolute top-56 left-96 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
         <div className="absolute -bottom-4 -left-8 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
         <div className="absolute bottom-24 right-12 w-96 h-96 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className=" justify-center items-center m-40 w-full md:order-1 md:w-1/2">
+        <div className=" justify-center items-center m-40 w-full md:pr-4 md:w-1/2 h-auto">
           <h1 className="text-6xl font-extrabold text-red-900">
             TinyBud Program
           </h1>
@@ -87,7 +87,7 @@ const Body = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full md:w-1/2 md:order-2 m-40  justify-center items-center border-1 p-6 shadow-2xl shadow-gray-800 rounded-lg  h-fit bg-blend-overlay">
+        <div className=" w-full md:w-1/2 md:pl-4 m-40  justify-center items-center border-1 p-6 shadow-2xl shadow-gray-800 rounded-lg  h-fit bg-blend-overlay">
           <form className="mix-blend-color-dodge" onSubmit={handleFormSubmit}>
             <div className="grid gap-6 mb-6 md:grid-cols-2">
               <div>
@@ -214,7 +214,7 @@ const Body = () => {
                 dateFormat="dd/MM/yyyy"
                 showIcon={true}
                 name="date"
-                required
+                
                 
               />
             </div>
@@ -254,12 +254,12 @@ const Body = () => {
         </div>
       </section>
 
-      <section className="m-20 h-screen bg-bgPrimary bg-opacity-25 p-8 rounded-md" id="ourpre">
-        <div className="text-center font-extrabold text-5xl text-red-800 m-20">
+      <section className="md:m-20 m-4 h-auto items-center bg-bgPrimary bg-opacity-25 p-4 md:p-8 rounded-md" id="ourpre">
+        <div className="text-center font-extrabold text-4xl md:text-5xl text-red-800 m-10 md:m-20">
           <h1>Our Preschool Programs</h1>
         </div>
-        <div className="flex justify-evenly mt-10">
-          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+        <div className="flex flex-col md:flex-row justify-evenly mt-10">
+          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl md:w-96">
             <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
               <img
                 src="https://www.eurokidsindia.com/ek-new-2023/images/Home/EuroSenior.webp"
@@ -280,7 +280,7 @@ const Body = () => {
               </p>
             </div>
           </div>
-          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl md:w-96">
             <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
               <img
                 src="https://img.freepik.com/free-photo/profile-view-group-preschool-students-raising-their-hands-trying-participate-school_662251-1735.jpg?t=st=1713971275~exp=1713974875~hmac=2ac260f258919735ddf4a41a2b99207c10e8638edf6c682b3980bd514cea764e&w=1380"
@@ -300,7 +300,7 @@ const Body = () => {
               </p>
             </div>
           </div>
-          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl md:w-96">
             <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
               <img
                 src="https://img.freepik.com/free-photo/group-preschool-kids-working-writing-assigment-classroom_662251-1631.jpg?t=st=1713971358~exp=1713974958~hmac=18432f7beea8d7f6df8ae4b37b397043c38334d92692a43bc70dffd44bec05c0&w=1380"
@@ -320,7 +320,7 @@ const Body = () => {
               </p>
             </div>
           </div>
-          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl md:w-96">
             <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
               <img
                 src="https://img.freepik.com/free-photo/happy-kids-elementary-school_53876-138141.jpg?t=st=1713971487~exp=1713975087~hmac=d8ea94903d5475b6d04e6d3ec32ec60b59d7cb5dee4ebec62ea101b2e86d7997&w=1380"
@@ -344,18 +344,27 @@ const Body = () => {
       </section>
 
 
-      <section className="m-20 bg-pink-300 w-auto bg-opacity-25 rounded-md p-8 h-screen">
-        <div className="text-5xl text-red-800 text-center font-extrabold mt-20">
+      <section className="m-4 md:m-20 bg-pink-300 w-auto bg-opacity-25 rounded-md p-4 md:p-8 h-auto md:h-screen">
+        <div className="text-4xl md:text-5xl text-red-800 text-center font-extrabold mt-10 md:mt-20">
           Fun at TinyBuds
         </div>
-        <div className="text-xl text-red-800 text-center font-semibold mt-20">
+        <div className="text-base md:text-xl text-red-800 text-center font-semibold mt-10 md:mt-20">
           We&#39;re all about making learning fun
         </div>
-        <div className="m-10">
-        <Slider dots={true} infinite={true} slidesToShow={3} slidesToScroll={1}>
+        <div className="m-4 md:m-10">
+        <Slider dots={true} infinite={true} slidesToShow={3}  slidesToScroll={1}
+         responsive={[
+          {
+            breakpoint: 768, // Medium screens and larger
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ]}
+        >
           
-          <div className="px-3">
-          <div className="bg-white shadow-xl shadow-red-300 rounded px-8 py-4 text-center ml-3 me-3 h-80">
+          <div className="px-2 md:px-3">
+          <div className="bg-white shadow-xl shadow-red-300 rounded px-4 md:px-8 py-4 text-center ml-2 md:ml-3 me-3 md:me-3 h-72 md:h-80">
             <div className="font-bold text-xl mb-2 text-red-800">Annual Day
             </div>
             <img src="./src/assets/fireworks.png" alt="" className="h-40 my-8 block mx-auto"/>
@@ -363,22 +372,22 @@ const Body = () => {
           </div>
           </div>
           
-          <div className="px-3">
-          <div className="bg-white shadow-xl shadow-red-300 rounded px-8 py-4 text-center ml-3 me-3 h-80">
+          <div className="px-2 md:px-3">
+          <div className="bg-white shadow-xl shadow-red-300 rounded px-4 md:px-8 py-4 text-center ml-2 md:ml-3 me-3 md:me-3 h-72 md:h-80">
             <div className="font-bold text-xl mb-2 text-red-800">Graduation Day</div>
             <img src="./src/assets/grad.png" alt="" className="h-40 my-8 mb-4 block mx-auto"/>
           </div>
           </div>
           
-          <div className="px-3">
-          <div className="bg-white shadow-xl shadow-red-300 rounded px-8 py-4 text-center ml-3 me-3 h-80">
+          <div className="px-2 md:px-3">
+          <div className="bg-white shadow-xl shadow-red-300 rounded px-4 md:px-8 py-4 text-center ml-2 md:ml-3 me-3 md:me-3 h-72 md:h-80">
             <div className="font-bold text-xl mb-2 text-red-800">Celebrations and Events</div>
             <img src="./src/assets/fest.png" alt="" className="h-40 my-8 block mx-auto"/>
           </div>
           </div>
           
-          <div className="px-3">
-          <div className="bg-white shadow-xl shadow-red-300 rounded px-8 py-4 text-center ml-3 me-3 h-80">
+          <div className="px-2 md:px-3">
+          <div className="bg-white shadow-xl shadow-red-300 rounded px-4 md:px-8 py-4 text-center ml-2 md:ml-3 me-3 md:me-3 h-72 md:h-80">
             <div className="font-bold text-xl mb-2 text-red-800">Health is Wealth Day</div>
             <img src="./src/assets/health.png" alt="" className="h-40 my-8 block mx-auto"/>
           </div>
