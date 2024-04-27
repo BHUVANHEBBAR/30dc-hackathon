@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:p-6 lg:p-8">
           <Link to="#" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img
-              src="./src/assets/plant.png"
+              src="/assets/plant.png"
               className="h-8"
               alt="TSA Logo"
             />

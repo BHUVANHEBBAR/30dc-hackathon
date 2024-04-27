@@ -9,56 +9,56 @@ const Blog = () => {
           title: 'Exciting Science Fair Coming Up!',
           content: 'Get ready for our annual Science Fair happening next week! Students will have the opportunity to showcase their innovative projects and experiments. There will be interactive exhibits, live demonstrations, and special guest speakers. Don\'t miss out on this fun and educational event!',
           author: 'Admin',
-          avatar: './src/assets/plant.png'
+          avatar: '/assets/plant.png'
         },
         {
           date: 'May 15, 2024',
           title: 'Outdoor Adventure Day!',
           content: 'Calling all adventurers! Join us for an exciting day of outdoor activities including hiking, rock climbing, and nature exploration. We\'ll be heading to the nearby national park for a day filled with fun and adventure. Don\'t forget to pack your sunscreen, water bottle, and sense of adventure!',
           author: 'Admin',
-          avatar: './src/assets/plant.png'
+          avatar: '/assets/plant.png'
         },
         {
           date: 'Apr 28, 2024',
           title: 'Spring Festival Celebration!',
           content: 'Celebrate the arrival of spring with our annual Spring Festival! Enjoy live music, delicious food, and games for the whole family. We\'ll have a petting zoo, face painting, and egg decorating stations. It\'s sure to be a day of joy and laughter for everyone!',
           author: 'Admin',
-          avatar: './src/assets/plant.png'
+          avatar: '/assets/plant.png'
         },
         {
           date: 'Mar 10, 2024',
           title: 'Community Garden Project Kickoff!',
           content: 'We\'re excited to announce the launch of our Community Garden Project! Students, parents, and community members are invited to join us as we transform an unused plot of land into a vibrant garden. Together, we\'ll learn about sustainable gardening practices, grow fresh produce, and foster a sense of community.',
           author: 'Admin',
-          avatar: './src/assets/plant.png'
+          avatar: '/assets/plant.png'
         },
         {
           date: 'Feb 22, 2024',
           title: 'International Day Celebration!',
           content: 'Join us as we celebrate cultural diversity with our International Day event! Experience the sights, sounds, and flavors of different countries through music, dance, and cuisine. There will be performances, cultural displays, and interactive activities for all ages. It\'s a day to embrace and appreciate the rich tapestry of cultures in our community.',
           author: 'Admin',
-          avatar: './src/assets/plant.png'
+          avatar: '/assets/plant.png'
         },
         {
           date: 'Jan 5, 2024',
           title: 'Winter Wonderland Party!',
           content: 'Get ready to bundle up and enjoy a day of winter fun at our Winter Wonderland Party! We\'ll have ice skating, snowman building contests, and hot cocoa stations. Don\'t forget to wear your favorite winter gear and join us for a day of frosty festivities!',
           author: 'Admin',
-          avatar: './src/assets/plant.png'
+          avatar: '/assets/plant.png'
         },
         {
           date: 'Dec 12, 2023',
           title: 'Holiday Toy Drive!',
           content: 'Spread joy and cheer this holiday season by participating in our Holiday Toy Drive! We\'re collecting new, unwrapped toys to donate to children in need. Your generosity will help make the holidays brighter for families in our community. Let\'s come together to make a difference!',
           author: 'Admin',
-          avatar: './src/assets/plant.png'
+          avatar: '/assets/plant.png'
         },
         {
           date: 'Nov 18, 2023',
           title: 'Fall Harvest Festival!',
           content: 'Celebrate the bounty of the season at our Fall Harvest Festival! Join us for pumpkin decorating, apple bobbing, and hayrides. We\'ll also have a farmers market featuring locally grown produce and homemade treats. It\'s a day of autumnal delights you won\'t want to miss!',
           author: 'Admin',
-          avatar: './src/assets/plant.png'
+          avatar: '/assets/plant.png'
         }
       ];
       

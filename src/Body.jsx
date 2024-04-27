@@ -367,7 +367,7 @@ const Body = () => {
           <div className="bg-white shadow-xl shadow-red-300 rounded px-4 md:px-8 py-4 text-center ml-2 md:ml-3 me-3 md:me-3 h-72 md:h-80">
             <div className="font-bold text-xl mb-2 text-red-800">Annual Day
             </div>
-            <img src="./src/assets/fireworks.png" alt="" className="h-40 my-8 block mx-auto"/>
+            <img src="/assets/fireworks.png" alt="" className="h-40 my-8 block mx-auto"/>
             
           </div>
           </div>
@@ -375,21 +375,21 @@ const Body = () => {
           <div className="px-2 md:px-3">
           <div className="bg-white shadow-xl shadow-red-300 rounded px-4 md:px-8 py-4 text-center ml-2 md:ml-3 me-3 md:me-3 h-72 md:h-80">
             <div className="font-bold text-xl mb-2 text-red-800">Graduation Day</div>
-            <img src="./src/assets/grad.png" alt="" className="h-40 my-8 mb-4 block mx-auto"/>
+            <img src="/assets/grad.png" alt="" className="h-40 my-8 mb-4 block mx-auto"/>
           </div>
           </div>
           
           <div className="px-2 md:px-3">
           <div className="bg-white shadow-xl shadow-red-300 rounded px-4 md:px-8 py-4 text-center ml-2 md:ml-3 me-3 md:me-3 h-72 md:h-80">
             <div className="font-bold text-xl mb-2 text-red-800">Celebrations and Events</div>
-            <img src="./src/assets/fest.png" alt="" className="h-40 my-8 block mx-auto"/>
+            <img src="/assets/fest.png" alt="" className="h-40 my-8 block mx-auto"/>
           </div>
           </div>
           
           <div className="px-2 md:px-3">
           <div className="bg-white shadow-xl shadow-red-300 rounded px-4 md:px-8 py-4 text-center ml-2 md:ml-3 me-3 md:me-3 h-72 md:h-80">
             <div className="font-bold text-xl mb-2 text-red-800">Health is Wealth Day</div>
-            <img src="./src/assets/health.png" alt="" className="h-40 my-8 block mx-auto"/>
+            <img src="/assets/health.png" alt="" className="h-40 my-8 block mx-auto"/>
           </div>
           </div>
         </Slider>

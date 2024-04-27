@@ -15,7 +15,7 @@ const Facilities = () => {
             <div className="flex rounded-lg h-full  bg-cyan-200 p-8 flex-col bg-opacity-70">
               <div className="flex items-center mb-3">
                 <div className="w-16 h-16 mr-3 inline-flex items-center justify-center rounded-full   text-black flex-shrink-0">
-                  <img src="./src/assets/security-camera.png" alt="Camera" />
+                  <img src="/assets/security-camera.png" alt="Camera" />
                 </div>
                 <h2 className="text-black  text-lg font-medium">
                   CCTV Surveillance & Constant Monitoring
@@ -34,7 +34,7 @@ const Facilities = () => {
             <div className="flex rounded-lg h-full  bg-cyan-200 p-8 flex-col bg-opacity-70">
               <div className="flex items-center mb-3">
                 <div className="w-16 h-16 mr-3 inline-flex items-center justify-center rounded-full  text-black flex-shrink-0">
-                  <img src="./src/assets/medical.png" alt="Medical" />
+                  <img src="/assets/medical.png" alt="Medical" />
                 </div>
                 <h2 className="text-black  text-lg font-medium">
                   Medical & Other Emergency Preparedness
@@ -53,7 +53,7 @@ const Facilities = () => {
             <div className="flex rounded-lg h-full  bg-cyan-200 p-8 flex-col bg-opacity-70">
               <div className="flex items-center mb-3">
                 <div className="w-16 h-16 mr-3 inline-flex items-center justify-center rounded-full  text-black flex-shrink-0">
-                  <img src="./src/assets/certif.png" alt="certified" />
+                  <img src="/assets/certif.png" alt="certified" />
                 </div>
                 <h2 className="text-black  text-lg font-medium">
                   Safety Certification & Regular Inspection
@@ -72,7 +72,7 @@ const Facilities = () => {
             <div className="flex rounded-lg h-full  bg-cyan-200 p-8 flex-col bg-opacity-70">
               <div className="flex items-center mb-3">
                 <div className="w-16 h-16 mr-3 inline-flex items-center justify-center rounded-full  text-black flex-shrink-0">
-                  <img src="./src/assets/staff.png" alt="staff" />
+                  <img src="/assets/staff.png" alt="staff" />
                 </div>
                 <h2 className="text-black  text-lg font-medium">
                   Background Verification Trained Staff & Teachers
@@ -91,7 +91,7 @@ const Facilities = () => {
             <div className="flex rounded-lg h-full  bg-cyan-200 p-8 flex-col bg-opacity-70">
               <div className="flex items-center mb-3">
                 <div className="w-16 h-16 mr-3 inline-flex items-center justify-center rounded-full  text-black flex-shrink-0">
-                  <img src="./src/assets/shield.png" alt="sheild" />
+                  <img src="/assets/shield.png" alt="sheild" />
                 </div>
                 <h2 className="text-black  text-lg font-medium">
                   Adherance to Safety Regulations
@@ -110,7 +110,7 @@ const Facilities = () => {
             <div className="flex rounded-lg h-full  bg-cyan-200 p-8 flex-col bg-opacity-70">
               <div className="flex items-center mb-3">
                 <div className="w-16 h-16 mr-3 inline-flex items-center justify-center rounded-full  text-black flex-shrink-0">
-                  <img src="./src/assets/kids.png" alt="kids" />
+                  <img src="/assets/kids.png" alt="kids" />
                 </div>
                 <h2 className="text-black  text-lg font-medium">
                   Child-friendly Infrastructure, Classrooms & Play area
