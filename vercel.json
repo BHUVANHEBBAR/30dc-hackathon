@@ -1,0 +1,33 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "/server.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "/candidates.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "/public/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      
+      {
+        "src": "/contacts",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/submit",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/server.js"
+      }
+    ]
+  }
+  
