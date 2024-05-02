@@ -38,7 +38,7 @@ const Body = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3000/submit", formData);
+      const response = await axios.post("https://30dc-hackathon.vercel.app/submit", formData);
       // Handle successful form submission here
       
       console.log(response.data);
