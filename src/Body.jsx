@@ -20,10 +20,13 @@ const Body = () => {
     setFormData({...formData,date:selectedDate});
   };
   const handleSelectCity = (event) => {
-    
     setSelectedCity(event.target.value);
-    setFormData({...formData,city:selectedCity});
-  }
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      city: selectedCity,
+    }));
+  };
+  
   const [formData, setFormData] = useState({
     // Initialize form fields here
     first_name:'',
@@ -189,17 +192,19 @@ const Body = () => {
               >
                 City
               </label>
-              <select name="city" id="city" 
-              value={formData.city}
-              onChange={handleSelectCity}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 :bg-gray-700 :border-gray-600 :placeholder-gray-400 :text-white :focus:ring-blue-500 :focus:border-blue-500">
-                <option value="bengaluru">Bengaluru</option>
-                <option value="pune">Pune</option>
-                <option value="mumbai">Mumbai</option>
-                <option value="delhi">Delhi</option>
-                <option value="chennai">Chennai</option>
-              </select>
-            </div>
+                <select name="city" id="city" 
+                
+                onChange={handleSelectCity}
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-md  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 :bg-gray-700 :border-gray-600 :placeholder-gray-400 :text-white :focus:ring-blue-500 :focus:border-blue-500">
+                  <option value="">Select city</option>
+                  <option value="bengaluru">Bengaluru</option>
+                  <option value="pune">Pune</option>
+                  <option value="mumbai">Mumbai</option>
+                  <option value="delhi">Delhi</option>
+                  <option value="chennai">Chennai</option>
+                </select>
+                
+              </div>
 
             <label className="block mb-2 text-xl font-medium text-gray-900 :text-white">
               Date of Birth
