@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
-import contactus from './contactus.js';
+import contactus from '../models/contactus.js';
 
 const app = express();
 const port = 3000;
