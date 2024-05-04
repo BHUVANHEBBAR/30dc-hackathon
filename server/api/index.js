@@ -35,6 +35,10 @@ const transporter = nodemailer.createTransport({
 }});
 
 
+app.get('/', (req, res) => {
+  res.json({message: 'Deployed'});
+});
+
   app.post('/submit', async (req, res) => {
     try {
       // Create a new FormData instance with the request body data
